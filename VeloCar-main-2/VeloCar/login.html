@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/login.css">
+    <script src="./assets/scripts/login.js"></script>
+    <title>Login To VeloCar</title>
+</head>
+
+<body>
+    <div class="UpperBlueBar">
+        <div class="UpperLogo">
+            <h1 class="VeloCarLogo">
+                <a href="main-page.html" id="deleteStorageLink">VeloCar</a>
+            </h1>
+        </div>
+
+        <div class="SignInButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="login.html">Sign In</a></u>
+            </p>
+        </div>
+
+        <div class="SignUpButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="signUpPage.html">Sign Up</a></u>
+            </p>
+        </div>
+
+        <div class="FAQButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="faq.html">FAQ</a></u>
+            </p>
+        </div>
+    </div>
+    <section>
+        <div class="login">
+            <form class="myForm" onsubmit="return submitAction();" id="redirectForm">
+                <h1 id="top_header">Log In</h1>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required id="id_email"><br>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required id="id_pass" minlength="6">
+                <button type="submit" id="id_button_bot">Sign In</button>
+                <p>Don't have an account? <a href="signUpPage.html">Register</a></p>
+                <p>Select other Actions</p>
+                <div class="radio">
+                    <input type="radio" name="action" value="Sign-In" id="id_sign" onclick="checkRadioButtons();">
+                    <label for="id_sign">Sign-In</label><br>
+                    <input type="radio" name="action" value="Delete-Account" id="id_delete" onclick="checkRadioButtons();">
+                    <label for="id_delete">Delete Account</label>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2023 VeloCar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

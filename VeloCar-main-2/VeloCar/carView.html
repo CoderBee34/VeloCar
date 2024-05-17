@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloCar</title>
+    <link rel="stylesheet" href="assets/styles/carView.css">
+    <script src="assets/scripts/carViewFunctions.js"></script>
+    <script>saveInitialData();</script>
+</head>
+
+<body>
+    <div class="UpperBlueBar">
+        <div class="UpperLogo">
+            <h1 class="VeloCarLogo">
+                <a href="main-page.html" id="deleteStorageLink">VeloCar</a>
+            </h1>
+        </div>
+
+        <div class="SignInButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="login.html">Sign In</a></u>
+            </p>
+        </div>
+
+        <div class="SignUpButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="signUpPage.html">Sign Up</a></u>
+            </p>
+        </div>
+
+        <div class="FAQButton" id="buttons">
+            <p class="UpperBarElements"><u>
+                    <a href="faq.html">FAQ</a></u>
+            </p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="grid-container">
+            <div class="grid-image">
+                <div id="imageContainer"></div>
+            </div>
+            <div class="grid-info">
+                <h2 id="title"></h2>
+                <div id="allignSide">
+                    <div id="normalText">Year: </div>
+                    <p id="year"></p>
+                </div>
+                
+                <div id="allignSide">
+                    <div id="normalText">KM: </div>
+                    <p id="km"></p>
+                </div>
+                <div id="allignSide">
+                    <div id="normalText">HP: </div>
+                    <p id="hp"></p>
+                </div>
+                <div id="allignSide">
+                    <div id="normalText">Color: </div>
+                    <p id="color"></p>
+                </div>
+                <div id="allignSide">
+                    <div id="normalText">Gear: </div>
+                    <p id="gear"></p>
+                </div>
+                <div id="allignSide">
+                    <div id="normalText">Fuel Type: </div>
+                    <p id="fuelType"></p>
+                </div>
+                <div id="allignSide">
+                    <div id="normalText">Price: </div>
+                    <p id="price"></p>
+                </div>
+                <button class="buy-button"><a href="PaymentScreen.html">Buy Now</a></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 VeloCar. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
